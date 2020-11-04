@@ -18,8 +18,8 @@ import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.SslHandler;
 
 /**
- * ​SSL证书就是遵守 SSL协议，由受信任的数字证书颁发机构CA，在验证服务器身份后颁发，具有服务器身份验证和数据传输加密功能。
-​   也就是说，HTTPS相比于HTTP服务，能够防止网络劫持，同时具备一定的安全加密作用。
+ * SSL证书就是遵守 SSL协议，由受信任的数字证书颁发机构CA，在验证服务器身份后颁发，具有服务器身份验证和数据传输加密功能。
+也就是说，HTTPS相比于HTTP服务，能够防止网络劫持，同时具备一定的安全加密作用。
    netty有提供SSL加密的工具包，只需要通过添加SslHandler，就能快速搭建。基于上面的代码，我们重新定义一个ChannelInitializer
  * @author Nico
  *

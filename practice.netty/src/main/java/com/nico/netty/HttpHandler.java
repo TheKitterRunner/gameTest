@@ -9,7 +9,6 @@ import io.netty.util.AsciiString;
 /**
  * 数据处理接口
  * @author Nico
- *
  */
 public class HttpHandler extends SimpleChannelInboundHandler<FullHttpRequest>{
 
@@ -42,5 +41,4 @@ public class HttpHandler extends SimpleChannelInboundHandler<FullHttpRequest>{
 	     heads.add(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);
      ctx.write(response);
 	}
-
 }

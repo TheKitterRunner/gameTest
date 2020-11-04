@@ -13,26 +13,16 @@ import io.netty.handler.codec.http.HttpResponseEncoder;
 /**
  * Nio服务器
  * @author Nico
- *
  */
 public class HttpServer {
-
 	private final int port;
 	
 	public HttpServer(int port) {
 		super();
 		this.port = port;
 	}
-
 	public static void main(String[] args) throws Exception{
-//		if (args.length != 1) {
-//            System.err.println(
-//                    "Usage: " + HttpServer.class.getSimpleName() +
-//                            " <port>");
-//            return;
-//        }
-        int port = 8089;
-        new HttpServer(port).start();
+        new HttpServer(8089).start();
 	}
 	
 	public void start() throws Exception {
