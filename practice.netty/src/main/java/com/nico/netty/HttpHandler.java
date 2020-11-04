@@ -13,14 +13,12 @@ import io.netty.util.AsciiString;
 public class HttpHandler extends SimpleChannelInboundHandler<FullHttpRequest>{
 
 	private AsciiString contentType = HttpHeaderValues.TEXT_PLAIN;
-	
 	@Override
 	public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
 		System.out.println("channelReadComplete");
         super.channelReadComplete(ctx);
         ctx.flush(); // 4
 	}
-	
 	@Override
 	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
 	    System.out.println("exceptionCaught");
